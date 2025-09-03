@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surya's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Surya</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#api-demo">API Demo</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <b>Surya Manikanta Pokanati</b>, passionate about web development.  
+       I specialize in <b>HTML, CSS, and JavaScript</b> for building responsive websites 🚀.
+    <b>AI/ML enthusiast with practical experience in designing and implementing deep learning and NLP solutions. Proficient in Python, TensorFlow, PyTorch, and data science libraries. Strong analytical, research, and problem-solving abilities, complemented by teamwork and adaptability. Passionate about applying machine learning to solve real-world challenges.</b></p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <!-- To-Do App -->
+      <div class="card">
+        <h3>To-Do List App</h3>
+        <p>Manage tasks with Local Storage persistence.</p>
+        <div id="todoApp">
+          <input type="text" id="taskInput" placeholder="Enter task...">
+          <button onclick="addTask()">Add</button>
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+      
+      <!-- Product Listing -->
+      <div class="card">
+        <h3>Product Listing</h3>
+        <p>Filter and sort products dynamically.</p>
+        <div id="productApp">
+          <select id="categoryFilter" onchange="filterProducts()">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="books">Books</option>
+          </select>
+          <select id="sortFilter" onchange="sortProducts()">
+            <option value="default">Sort By</option>
+            <option value="priceLow">Price: Low to High</option>
+            <option value="priceHigh">Price: High to Low</option>
+          </select>
+          <div id="products" class="grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Demo -->
+  <section id="api-demo">
+    <h2>API Demo</h2>
+    <div class="grid">
+      <!-- Weather API -->
+      <div class="card">
+        <h3>🌦 Weather Checker</h3>
+        <input type="text" id="cityInput" placeholder="Enter city...">
+        <button onclick="getWeather()">Get Weather</button>
+        <p id="weatherResult">Weather info will appear here.</p>
+      </div>
+      
+      <!-- Joke API -->
+      <div class="card">
+        <h3>😂 Random Joke</h3>
+        <button onclick="getJoke()">Get Joke</button>
+        <p id="jokeResult">Click the button for a joke!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:suryamanikantapokanati8374@gmail.com">suryamanikantapokanati8374@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/suryamanikanta66" target="_blank">GitHub Profile</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Surya's Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
